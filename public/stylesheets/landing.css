@@ -1,0 +1,67 @@
+
+  
+body{
+    background-color:#000;
+}
+#landing-header{
+    z-index:1;
+    position: relative;
+    text-align: center;
+    padding-top: 40vh;
+    
+}
+#landing-header h1{
+    color:#fff;
+}
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+    background-image: url(https://scontent.fccu10-1.fna.fbcdn.net/v/t1.0-9/14322456_191805787907478_1221201863726888405_n.jpg?_nc_cat=102&_nc_oc=AQmsRzFLf1xcp-GibQTIxN1zfPzavsDZqA3nSmbMGvNXzaHKKlyLdBvdYgtrxJVOYaw&_nc_ht=scontent.fccu10-1.fna&oh=a198f7a98a9d60a0da33d2c2537d56ba&oe=5E4D4DF3);
+  }
+.slideshow li:nth-child(2) { 
+  background-image: url(https://scontent.fccu10-1.fna.fbcdn.net/v/t1.0-9/32130693_444776545943733_6812207453061513216_n.jpg?_nc_cat=103&_nc_oc=AQmRQQKgJnnY-NyMMecJYgodu78oEiADyheNR9JmSPDCGJybQZm2eZJZxI3ANLkRILM&_nc_ht=scontent.fccu10-1.fna&oh=c90639047ffa87f9b721556c18ae10d5&oe=5E17BC9C);
+  animation-delay: 5s;
+}
+.slideshow li:nth-child(3) { 
+    background-image: url(https://scontent.fccu10-1.fna.fbcdn.net/v/t31.0-8/p960x960/16665349_268557010232355_1407846620806224961_o.jpg?_nc_cat=108&_nc_oc=AQnT76vTyskCFj2lyxZnmVxYbVKERFKZj--AihpG8RQh5z4g82WJ7LtwL6qvekFw96c&_nc_ht=scontent.fccu10-1.fna&oh=1edd8f0e3c18f1d2564a5c9f9f6cd94f&oe=5E47F98E);
+  animation-delay: 15s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(https://scontent.fccu10-1.fna.fbcdn.net/v/t1.0-9/32130693_444776545943733_6812207453061513216_n.jpg?_nc_cat=103&_nc_ht=scontent.fccu10-1.fna&oh=12e110a071ca6ccb1ae1d97062e0bc61&oe=5D02E19C);
+  animation-delay: 25s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(https://scontent.fccu10-1.fna.fbcdn.net/v/t1.0-9/14322456_191805787907478_1221201863726888405_n.jpg?_nc_cat=102&_nc_ht=scontent.fccu10-1.fna&oh=b917837d8e4064fdd0c1c6f8d5f82178&oe=5D10E5F3);
+  animation-delay: 30s; 
+}
+
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
